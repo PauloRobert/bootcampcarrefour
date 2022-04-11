@@ -5,7 +5,16 @@ class ContaBancaria {
         this.agencia = agencia;
         this.numero = numero;
         this.tipo = tipo;
-        this.saldo = saldo;
+        //incluindo o _ na frente para mostrar que ele terá um getter e setter
+        this._saldo = saldo;
     }
 
+    //add getter e setter
+    get saldo(){
+        return this._saldo;
+    }
+
+    set saldo(valor){
+        this._saldo = valor;
+    }
 }
